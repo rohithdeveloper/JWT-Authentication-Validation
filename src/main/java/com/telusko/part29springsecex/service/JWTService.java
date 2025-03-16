@@ -83,4 +83,7 @@ public class JWTService {
         return extractClaim(token, Claims::getExpiration);
     }
 
+    public long getExpirationTime() {
+        return 1000 * 60 * 60; // 1 hour in milliseconds
+    }
 }
